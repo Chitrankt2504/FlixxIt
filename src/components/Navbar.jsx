@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
+
 import{FaPowerOff, FaSearch} from "react-icons/fa";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { firebaseAuth } from "../utils/firebase-config";
@@ -103,7 +104,7 @@ const Container = styled.div`
 export default function Navbar({isScrolled}) {
   const links = [
     { name: "Home", link: "/" },
-    { name: "TV Show", link: "/tvshow" },
+    { name: "TV Shows", link: "/tvshows" },
     { name: "Movies", link: "/movies" },
     { name: "My List", link: "/mylist" },
   ];
@@ -163,4 +164,4 @@ export default function Navbar({isScrolled}) {
   );
 }
 
-// const Container = styled.div``
+
