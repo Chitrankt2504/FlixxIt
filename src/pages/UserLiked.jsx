@@ -25,6 +25,7 @@ export default function UserLiked() {
   const dispatch = useDispatch();
   const fetchMovies = async (email) => {
     const moviesArray = await dispatch(getUserLikedMovies(email)).unwrap();
+    console.log(moviesArray);
       setMovies(moviesArray);
   }
 
