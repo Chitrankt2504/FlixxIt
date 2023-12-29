@@ -104,7 +104,7 @@ const Container = styled.div`
 export default function Navbar({isScrolled}) {
   const links = [
     { name: "Home", link: "/" },
-    { name: "TV Shows", link: "/tvshows" },
+    { name: "TV Shows", link: "/tv" },
     { name: "Movies", link: "/movies" },
     { name: "My List", link: "/mylist" },
   ];
